@@ -1,0 +1,35 @@
+{
+  "name": "codewonders_helpers",
+  "license": "MIT",
+  "version": "0.2.11",
+  "repository": "adenekan41/helpers",
+  "description": "A Small Helpers Utility Functions For Javascript Development",
+  "author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",
+  "scripts": {
+    "build": "yarn flush && rollup -c",
+    "format": "prettier"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "rollup": "^1.10.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-multi-input": "^1.0.3",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "dependencies": {
+    "core-js": "^3.3.4"
+  },
+  "keywords": [
+    "javascript",
+    "codewonders",
+    "js",
+    "utility",
+    "functions",
+    "utilities",
+    "helpers",
+    "helper functions"
+  ]
+}
