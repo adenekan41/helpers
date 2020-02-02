@@ -6,8 +6,8 @@
   "description": "A Small Helpers Utility Functions For Javascript Development",
   "author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",
   "scripts": {
-    "build": "yarn flush && rollup -c",
-    "format": "prettier"
+    "flush": "rm -rf build/bundle.min.js",
+    "build": "yarn flush && rollup -c"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -16,11 +16,11 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-multi-input": "^1.0.3",
-    "rollup-plugin-node-resolve": "^4.2.3",
-    "rollup-plugin-uglify": "^6.0.4"
+    "rollup-plugin-node-resolve": "^4.2.3"
   },
   "dependencies": {
-    "core-js": "^3.3.4"
+    "core-js": "^3.3.4",
+    "rollup-plugin-terser": "^5.2.0"
   },
   "keywords": [
     "javascript",

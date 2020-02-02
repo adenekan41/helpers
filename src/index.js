@@ -1,7 +1,6 @@
 /*!
  * codewonders_helpers v0.2.11
- * https://github.com/whizkydee/helpers
- * (c) 2019-present Olaolu Olawuyi
+ * (c) 2020-present Adenekan Wonderful
  * Released under the MIT License.
  */
 

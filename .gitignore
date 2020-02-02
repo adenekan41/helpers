@@ -40,6 +40,7 @@ typings/
 
 # Optional REPL history
 .node_repl_history
+
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
@@ -55,3 +56,7 @@ jspm_packages/
 
 # dotenv environment variables file
 .env
+
+# next.js build output
+bundle-es/
+bundle-cjs/
