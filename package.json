@@ -1,12 +1,15 @@
 {
-  "name": "codewonders_helpers",
+  "name": "codewonders-helpers",
   "license": "MIT",
   "version": "0.2.11",
   "repository": "adenekan41/helpers",
   "description": "A Small Helpers Utility Functions For Javascript Development",
   "author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",
+  "main": "bundle-cjs/index.js",
+  "module": "bundle-es/index.js",
+  "jsnext:main": "bundle-es/index.js",
   "scripts": {
-    "flush": "rm -rf build/bundle.min.js",
+    "flush": "rm -rf bundle-cjs && rm -rf bundle-es",
     "build": "yarn flush && rollup -c"
   },
   "devDependencies": {
@@ -18,6 +21,10 @@
     "rollup-plugin-multi-input": "^1.0.3",
     "rollup-plugin-node-resolve": "^4.2.3"
   },
+  "files": [
+    "bundle-es",
+    "bundle-cjs"
+  ],
   "dependencies": {
     "core-js": "^3.3.4",
     "rollup-plugin-terser": "^5.2.0"
