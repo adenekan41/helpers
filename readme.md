@@ -1,8 +1,11 @@
-![Drag Racing](https://codewonders.dev/icons/apple-icon-57x57.png)
+![Drag Racing](https://i.ibb.co/JtYZKpc/Group-10-2-1.png)
 
 # [codewonders-helpers](https://github.com/adenekan41/helpers)
 
-> A Small Helpers Utility Functions For Javascript Development.
+A Small Helpers Utility Functions For Javascript Development. 
+
+## Helper Functions
+>Still in progress coming up with useful helper 
 
 ## Install
 
