@@ -1,7 +1,7 @@
 {
   "name": "codewonders-helpers",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "adenekan41/helpers",
   "description": "A Small Helpers Utility Functions For Javascript Development",
   "author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",
@@ -21,6 +21,7 @@
     "rollup-plugin-multi-input": "^1.0.3",
     "rollup-plugin-node-resolve": "^4.2.3"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "files": [
     "bundle-es",
     "bundle-cjs"
