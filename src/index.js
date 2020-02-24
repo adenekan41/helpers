@@ -8,6 +8,7 @@ export * from './helpers/localstorage';
 export * from './helpers/session-storage';
 
 export * from './helpers/user-agent';
+export * from './helpers/encode-decode';
 export * from './helpers/array-helpers';
 export { default as cookieToObject } from './helpers/cookies-to-object';
 export { default as countriesByCallCodes } from './helpers/countries-by-calling-code';
