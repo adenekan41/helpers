@@ -1,1 +1,2 @@
-export default collectInto = x => (...args) => x(args);
+const collectInto = x => (...args) => x(args);
+export default collectInto;

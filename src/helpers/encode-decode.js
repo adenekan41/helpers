@@ -11,11 +11,11 @@ export const encode = e => {
 	let u;
 	let a;
 	let f = 0;
-	e = utf8encode(e);
-	while (f < e.length) {
-		n = e.charCodeAt(f++);
-		r = e.charCodeAt(f++);
-		i = e.charCodeAt(f++);
+	let m = utf8encode(e);
+	while (f < m.length) {
+		n = m.charCodeAt(f++);
+		r = m.charCodeAt(f++);
+		i = m.charCodeAt(f++);
 		s = n >> 2;
 		o = ((n & 3) << 4) | (r >> 4);
 		u = ((r & 15) << 2) | (i >> 6);
@@ -45,12 +45,12 @@ export const decode = e => {
 	let u;
 	let a;
 	let f = 0;
-	e = e.replace(/[^A-Za-z0-9\+\/\=]/g, '');
-	while (f < e.length) {
-		s = keyStr.indexOf(e.charAt(f++));
-		o = keyStr.indexOf(e.charAt(f++));
-		u = keyStr.indexOf(e.charAt(f++));
-		a = keyStr.indexOf(e.charAt(f++));
+	let m = e.replace(/[^A-Za-z0-9\+\/\=]/g, '');
+	while (f < m.length) {
+		s = keyStr.indexOf(m.charAt(f++));
+		o = keyStr.indexOf(m.charAt(f++));
+		u = keyStr.indexOf(m.charAt(f++));
+		a = keyStr.indexOf(m.charAt(f++));
 		n = (s << 2) | (o >> 4);
 		r = ((o & 15) << 4) | (u >> 2);
 		i = ((u & 3) << 6) | a;
@@ -62,8 +62,7 @@ export const decode = e => {
 			t += String.fromCharCode(i);
 		}
 	}
-	t = utf8decode(t);
-	return t;
+	return utf8decode(t);
 };
 
 export const utf8encode = e => {
@@ -88,6 +87,8 @@ export const utf8encode = e => {
 export const utf8decode = e => {
 	let t = '';
 	let n = 0;
+	let c2;
+	let c1;
 	let r = (c1 = c2 = 0);
 	while (n < e.length) {
 		r = e.charCodeAt(n);

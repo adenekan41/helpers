@@ -1,4 +1,4 @@
-export default isContainedIn = (a, b) => {
+export default function isContainedIn(a, b) {
 	for (const v of new Set(a)) {
 		if (
 			!b.some(e => e === v) ||
@@ -7,4 +7,4 @@ export default isContainedIn = (a, b) => {
 			return false;
 	}
 	return true;
-};
+}

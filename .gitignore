@@ -60,3 +60,4 @@ jspm_packages/
 # next.js build output
 bundle-es/
 bundle-cjs/
+test.js
