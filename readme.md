@@ -1,4 +1,4 @@
-![Codewonders](https://i.ibb.co/Kr7v5Db/compiled-1.png)
+![Codewonders](https://i.ibb.co/JtYZKpc/Group-10-2-1.png)
 
 # Codewonders Helpers [![npm](https://badge.fury.io/js/codewonders-helpers.svg)](https://www.npmjs.com/package/codewonders-helpers)
 
