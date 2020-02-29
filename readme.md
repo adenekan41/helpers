@@ -1,6 +1,8 @@
-![Drag Racing](https://i.ibb.co/JtYZKpc/Group-10-2-1.png)
+![Codewonders](https://i.ibb.co/Kr7v5Db/compiled-1.png)
 
 # Codewonders Helpers [![npm](https://badge.fury.io/js/codewonders-helpers.svg)](https://www.npmjs.com/package/codewonders-helpers)
+
+[![NPM](https://nodei.co/npm/codewonders-helpers.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/codewonders-helpers/)
 
 This is a small helpers utility functions for javascript development. In here
 are the regular functions i use in my development feel free to contribute.
@@ -56,6 +58,32 @@ are the regular functions i use in my development feel free to contribute.
 
 - countries-by-states - Gets country and their states
   [here](https://github.com/adenekan41/helpers/blob/master/src/helpers/countries-by-states.js).
+
+### _Encode and Decode_
+
+- encode - encodes string to base 64
+  [here](https://github.com/adenekan41/helpers/blob/master/src/helpers/encode-decode.js).
+  takes in `string`
+
+- decode - decodes encoded string from base 64
+  [here](https://github.com/adenekan41/helpers/blob/master/src/helpers/encode-decode.js).
+  takes in `string`
+
+- utf8encode - encodes string to utf8
+  [here](https://github.com/adenekan41/helpers/blob/master/src/helpers/encode-decode.js).
+  takes in `string`
+
+* utf8decode - decodes encoded string from utf8
+  [here](https://github.com/adenekan41/helpers/blob/master/src/helpers/encode-decode.js).
+  takes in `string`
+
+### _Cookie To Object Helper_
+
+- getRandomColor - returns random color
+  [here](https://github.com/adenekan41/helpers/blob/master/src/helpers/get-random-colors.js).
+  returns color in `HEX`
+
+> Still documenting :)
 
 ## Install
 
