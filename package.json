@@ -1,43 +1,46 @@
 {
-  "name": "codewonders-helpers",
-  "license": "MIT",
-  "version": "0.0.8",
-  "repository": "git://github.com/adenekan41/helpers.git",
-  "description": "A Small Helpers Utility Functions For Javascript Development",
-  "author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",
-  "main": "bundle-cjs/index.js",
-  "module": "bundle-es/index.js",
-  "jsnext:main": "bundle-es/index.js",
-  "scripts": {
-    "flush": "rm -rf bundle-cjs && rm -rf bundle-es",
-    "build": "yarn flush && rollup -c",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
-  },
-  "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "rollup": "^1.10.0",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^9.3.4",
-    "rollup-plugin-multi-input": "^1.0.3",
-    "rollup-plugin-node-resolve": "^4.2.3",
-    "rollup-plugin-terser": "^5.2.0"
-  },
-  "files": [
-    "bundle-es",
-    "bundle-cjs"
-  ],
-  "dependencies": {
-    "core-js": "^3.3.4"
-  },
-  "keywords": [
-    "javascript",
-    "codewonders",
-    "js",
-    "utility",
-    "functions",
-    "utilities",
-    "helpers",
-    "helper functions"
-  ]
+	"name": "@adenekan41/codewonders-helpers",
+	"license": "MIT",
+	"version": "0.0.8",
+	"repository": "git://github.com/adenekan41/helpers.git",
+	"description": "A Small Helpers Utility Functions For Javascript Development",
+	"author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",
+	"main": "bundle-cjs/index.js",
+	"module": "bundle-es/index.js",
+	"jsnext:main": "bundle-es/index.js",
+	"scripts": {
+		"flush": "rm -rf bundle-cjs && rm -rf bundle-es",
+		"build": "yarn flush && rollup -c",
+		"format": "prettier --write \"**/*.{js,jsx,json,md}\""
+	},
+	"devDependencies": {
+		"@babel/core": "^7.4.3",
+		"@babel/preset-env": "^7.4.3",
+		"rollup": "^1.10.0",
+		"rollup-plugin-babel": "^4.3.2",
+		"rollup-plugin-commonjs": "^9.3.4",
+		"rollup-plugin-multi-input": "^1.0.3",
+		"rollup-plugin-node-resolve": "^4.2.3",
+		"rollup-plugin-terser": "^5.2.0"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
+	"files": [
+		"bundle-es",
+		"bundle-cjs"
+	],
+	"dependencies": {
+		"core-js": "^3.3.4"
+	},
+	"keywords": [
+		"javascript",
+		"codewonders",
+		"js",
+		"utility",
+		"functions",
+		"utilities",
+		"helpers",
+		"helper functions"
+	]
 }

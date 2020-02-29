@@ -1,6 +1,6 @@
 ![Drag Racing](https://i.ibb.co/JtYZKpc/Group-10-2-1.png)
 
-# Codewonders Helpers [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# Codewonders Helpers [![npm](https://badge.fury.io/js/codewonders-helpers.svg)](https://www.npmjs.com/package/codewonders-helpers)
 
 This is a small helpers utility functions for javascript development. In here
 are the regular functions i use in my development feel free to contribute.
