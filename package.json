@@ -1,5 +1,5 @@
 {
-	"name": "codewonders-helpers",
+	"name": "@adenekan41/codewonders-helpers",
 	"license": "MIT",
 	"version": "0.0.8-beta.2",
 	"repository": "git://github.com/adenekan41/helpers.git",
@@ -22,6 +22,9 @@
 		"rollup-plugin-multi-input": "^1.0.3",
 		"rollup-plugin-node-resolve": "^4.2.3",
 		"rollup-plugin-terser": "^5.2.0"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
 	},
 	"files": [
 		"bundle-es",
