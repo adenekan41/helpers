@@ -1,4 +1,10 @@
-export default function isContainedIn(a, b) {
+/**
+ * @function
+ * @param {*} a
+ * @param {*} b
+ */
+
+const isContainedIn = (a, b) => {
 	for (const v of new Set(a)) {
 		if (
 			!b.some(e => e === v) ||
@@ -7,4 +13,6 @@ export default function isContainedIn(a, b) {
 			return false;
 	}
 	return true;
-}
+};
+
+export default isContainedIn;

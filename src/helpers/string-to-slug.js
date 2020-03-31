@@ -1,4 +1,10 @@
-export default function stringToSlug(str, separator) {
+/**
+ * @function
+ * @default
+ * @param {*} str
+ * @param {*} separator
+ */
+const stringToSlug = (str, separator) => {
 	str = str.trim();
 	str = str.toLowerCase();
 
@@ -18,4 +24,6 @@ export default function stringToSlug(str, separator) {
 		.replace(/^-+/, '')
 		.replace(/-+$/, '')
 		.replace(/-/g, separator);
-}
+};
+
+export default stringToSlug;

@@ -2,6 +2,10 @@
 /* eslint-disable no-console */
 import isJsonString from './is-json-string';
 
+/**
+ * @function
+ * @param {*} state
+ */
 export const getSessionState = state => {
 	try {
 		const serializedState = sessionStorage.getItem(state);
@@ -20,6 +24,11 @@ export const getSessionState = state => {
 	}
 };
 
+/**
+ * @function
+ * @param {*} state
+ * @param {*} value
+ */
 export const setSessionState = (state, value) => {
 	try {
 		return typeof value === 'string' || value.constructor === String
@@ -30,6 +39,10 @@ export const setSessionState = (state, value) => {
 	}
 };
 
+/**
+ * @function
+ * @param {*} state
+ */
 export const clearSessionState = state => {
 	try {
 		if (state) {

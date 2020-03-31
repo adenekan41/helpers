@@ -10,6 +10,7 @@ export * from './helpers/session-storage';
 export * from './helpers/user-agent';
 export * from './helpers/encode-decode';
 export * from './helpers/array-helpers';
+export * from './helpers/number-helpers';
 export { default as cookieToObject } from './helpers/cookies-to-object';
 export { default as countriesByCallCodes } from './helpers/countries-by-calling-code';
 export { default as countriesByCurrency } from './helpers/countries-by-curreny-code';

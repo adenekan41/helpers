@@ -1,10 +1,14 @@
-export default function addMultipleListeners(
-	element,
-	events,
-	handler,
-	useCapture,
-	args
-) {
+/**
+ * @default
+ * @function
+ * @param {*} element
+ * @param {*} events
+ * @param {*} handler
+ * @param {*} useCapture
+ * @param {*} args
+ * @returns {Array}
+ */
+const addMultipleListeners = (element, events, handler, useCapture, args) => {
 	if (!(events instanceof Array)) {
 		throw new Error(
 			'addMultipleListeners: ' +
@@ -19,4 +23,6 @@ export default function addMultipleListeners(
 	for (let i = 0; i < events.length; i += 1) {
 		element.addEventListener(events[i], handlerFn, useCapture);
 	}
-}
+};
+
+export default addMultipleListeners;

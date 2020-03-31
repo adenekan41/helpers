@@ -1,8 +1,13 @@
 const keyStr =
 	'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 'abcdefghijklmnopqrstuvwxyz0123456789+/=';
-
+/**
+ * @function
+ * @param {*} e
+ * @returns {Polyfill for window.btoa}
+ * @returns {initialString}
+ */
 export const encode = e => {
-	let t = '';
+	let initialString = '';
 	let n;
 	let r;
 	let i;
@@ -25,16 +30,21 @@ export const encode = e => {
 		} else if (isNaN(i)) {
 			a = 64;
 		}
-		t =
-			t +
+		initialString =
+			initialString +
 			keyStr.charAt(s) +
 			keyStr.charAt(o) +
 			keyStr.charAt(u) +
 			keyStr.charAt(a);
 	}
-	return t;
+	return initialString;
 };
 
+/**
+ * @function
+ * @param {*} e
+ * @returns {utf8decode(e)}
+ */
 export const decode = e => {
 	let t = '';
 	let n;
@@ -65,6 +75,10 @@ export const decode = e => {
 	return utf8decode(t);
 };
 
+/**
+ * @function
+ * @param {*} e
+ */
 export const utf8encode = e => {
 	e = e.replace(/\r\n/g, '\n');
 	let t = '';
@@ -84,6 +98,10 @@ export const utf8encode = e => {
 	return t;
 };
 
+/**
+ * @function
+ * @param {*} e
+ */
 export const utf8decode = e => {
 	let t = '';
 	let n = 0;

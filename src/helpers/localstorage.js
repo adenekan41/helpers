@@ -2,6 +2,10 @@
 /* eslint-disable no-console */
 import isJsonString from './is-json-string';
 
+/**
+ * @function
+ * @param {*} state
+ */
 export const getState = state => {
 	try {
 		const serializedState = localStorage.getItem(state);
@@ -20,6 +24,11 @@ export const getState = state => {
 	}
 };
 
+/**
+ * @function
+ * @param {*} state
+ * @param {*} value
+ */
 export const setState = (state, value) => {
 	try {
 		return typeof value === 'string' || value.constructor === String
@@ -30,6 +39,10 @@ export const setState = (state, value) => {
 	}
 };
 
+/**
+ * @function
+ * @param {*} state
+ */
 export const clearState = state => {
 	try {
 		if (state) {
