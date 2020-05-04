@@ -12,6 +12,8 @@ export * from './helpers/encode-decode';
 export * from './helpers/array-helpers';
 export * from './helpers/number-helpers';
 export { default as cookieToObject } from './helpers/cookies-to-object';
+export { default as debounce } from './helpers/debounce';
+export { default as padDigits } from './helpers/pad-digits';
 export { default as countriesByCallCodes } from './helpers/countries-by-calling-code';
 export { default as countriesByCurrency } from './helpers/countries-by-curreny-code';
 export { default as countriesByStates } from './helpers/countries-by-states';
