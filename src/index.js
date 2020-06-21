@@ -33,3 +33,5 @@ export { default as isContainedIn } from './helpers/is-contained-in';
 export { default as collectInto } from './helpers/collect-into';
 export { default as sleep } from './helpers/sleep';
 export { default as bind } from './helpers/bind';
+export { default as trunc } from './helpers/trunc';
+export { default as guidGenerator } from './helpers/guid-generator';

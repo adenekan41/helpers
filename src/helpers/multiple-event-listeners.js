@@ -17,7 +17,7 @@ const addMultipleListeners = (element, events, handler, useCapture, args) => {
 		);
 	}
 	//create a wrapper to be able to use additional arguments
-	let handlerFn = function(e) {
+	let handlerFn = function (e) {
 		handler.apply(this, args && args instanceof Array ? args : []);
 	};
 	for (let i = 0; i < events.length; i += 1) {
