@@ -1,7 +1,7 @@
 {
 	"name": "@adenekan41/codewonders-helpers",
 	"license": "MIT",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"repository": "git://github.com/adenekan41/helpers.git",
 	"description": "A Small Helpers Utility Functions For Javascript Development",
 	"author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",

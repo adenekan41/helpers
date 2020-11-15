@@ -8,8 +8,7 @@ const stringToSlug = (str, separator) => {
 	str = str.trim();
 	str = str.toLowerCase();
 
-	// remove accents, swap ñ for n, etc
-	// copied from a git gist
+	// remove accents, swap ñ for n, et
 	const from = 'åàáãäâèéëêìíïîòóöôùúüûñç·/_,:;';
 	const to = 'aaaaaaeeeeiiiioooouuuunc------';
 

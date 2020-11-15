@@ -34,6 +34,6 @@ export const isChrome = () =>
 // Edge (based on chromium) detection
 export const isEdgeChromium = () =>
 	isChrome && navigator.userAgent.indexOf('Edg') != -1;
-
+export const isBrowserTabFocused = () => !document.hidden;
 // Blink engine detection
 export const isBlink = () => (isChrome || isOpera) && !!window.CSS;

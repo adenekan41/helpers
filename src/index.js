@@ -19,6 +19,7 @@ export { default as countriesByCurrency } from './helpers/countries-by-curreny-c
 export { default as countriesByStates } from './helpers/countries-by-states';
 export { default as getRandomColors } from './helpers/get-random-colors';
 export { default as isEmpty } from './helpers/is-empty';
+export { default as copyToClipboard } from './helpers/copy-to-clipboard';
 export { default as isJsonString } from './helpers/is-json-string';
 export { default as multipleEvents } from './helpers/multiple-event-listeners';
 export { default as openNewWindow } from './helpers/open-new-window';
