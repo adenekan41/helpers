@@ -1,10 +1,14 @@
 /**
- * @function
- * @param {Function} func
- * @param {Number} wait
- * @param {Number} immediate
+ * Gives you the ability to forces a function to wait a certain
+ * amount of time before running again
+ *
+ * e.g: var m = debouce(() => {}, 3000) // Runs after 3ms
+ *
+ * @param {Function} func - The parsed cuntion
+ * @param {Number} wait - Time to delay
+ * @param {Boolean} immediate - Allows you to call immediately at some point
+ * @returns {Function} Returns debounced function
  */
-
 const debounce = (func, wait, immediate) => {
 	var timeout;
 	return function () {

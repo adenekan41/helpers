@@ -1,3 +1,7 @@
+/**
+ * Get countries by their states, phones codes
+ * capitals, currencies, iso3 and iso2
+ */
 export default [
 	{
 		name: 'Afghanistan',

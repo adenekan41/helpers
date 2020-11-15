@@ -1,13 +1,15 @@
 /**
- * @function
- * @default
- * @param {*} obj
- * @returns {Boolean}
+ * Gives you the ability to check if any data type is empty
+ *
+ * e.g: isEmpty('') // True
+ * isEmpty({}) // True
+ *
+ * @param {unknown} data - the data type
+ * @returns {Boolean} Returns a boolean if its empty
  */
-const isEmpty = obj => {
-	// get if there is a key in the obj either an object or array
-	for (let key in obj) {
-		if (obj.hasOwnProperty(key)) return false;
+const isEmpty = data => {
+	for (let key in data) {
+		if (data.hasOwnProperty(key)) return false;
 	}
 	return true;
 };

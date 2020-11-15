@@ -1,6 +1,9 @@
 /**
- * create a unique ID for the data object
- * @returns {String}
+ * Gives you the ability to create a 'Globally Unique Identifier' from S4 encryptions
+ *
+ * e.g: guidGenerator() // 4456-4545-4343-55e3455
+ *
+ * @returns {String} Returns a Unique Identifier
  */
 const guidGenerator = () => {
 	const S4 = () => {

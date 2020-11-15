@@ -1,11 +1,20 @@
+/**
+ * @callback Encryption
+ * @param {string} e - encryption value
+ * @returns {string} Returns a the encrypted string
+ */
+
+/**
+ * Gives the ability to encode a string
+ * A polyfill that works like window.btoa
+ *
+ * e.g: encode('mynameiswakanda') // "bXluYW1laXN3YWthbmRh"
+ *
+ * @type {Encryption}
+ * @type {typeof utf8encode}
+ */
 const keyStr =
 	'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 'abcdefghijklmnopqrstuvwxyz0123456789+/=';
-/**
- * @function
- * @param {*} e
- * @returns {Polyfill for window.btoa}
- * @returns {initialString}
- */
 export const encode = e => {
 	let initialString = '';
 	let n;
@@ -41,9 +50,13 @@ export const encode = e => {
 };
 
 /**
- * @function
- * @param {*} e
- * @returns {utf8decode(e)}
+ * Gives the ability to decode an enoded string
+ * A polyfill that works like window.atob
+ *
+ * e.g: decode("bXluYW1laXN3YWthbmRh") // 'mynameiswakanda'
+ *
+ * @type {Encryption}
+ * @type {typeof utf8decode}
  */
 export const decode = e => {
 	let t = '';
@@ -76,10 +89,9 @@ export const decode = e => {
 };
 
 /**
- * @function
- * @param {*} e
+ * @type {Encryption}
  */
-export const utf8encode = e => {
+const utf8encode = e => {
 	e = e.replace(/\r\n/g, '\n');
 	let t = '';
 	for (let n = 0; n < e.length; n++) {
@@ -99,10 +111,9 @@ export const utf8encode = e => {
 };
 
 /**
- * @function
- * @param {*} e
+ * @type {Encryption}
  */
-export const utf8decode = e => {
+const utf8decode = e => {
 	let t = '';
 	let n = 0;
 	let c2;

@@ -1,3 +1,6 @@
+/**
+ * Returns countries by curreny codes
+ */
 export default [
 	{
 		country: 'Afghanistan',

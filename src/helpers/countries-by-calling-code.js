@@ -1,3 +1,6 @@
+/**
+ * Get countries by their calling codes
+ */
 export default [
 	{
 		country: 'Afghanistan',

@@ -1,7 +1,11 @@
 /**
+ * Gives you the ability to add prefix to numbers
  *
- * @param {Number} number
- * @param {Number} digits
+ * e.g: padDigits(200, 5) // 00200
+ *
+ * @param {Number} number - number you need to pad
+ * @param {Number} digits - the amout of paddings
+ * @returns {Number} Returns Padded digit
  */
 
 const padDigits = (number, digits) => {

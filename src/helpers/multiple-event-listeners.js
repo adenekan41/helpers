@@ -1,12 +1,14 @@
 /**
- * @default
- * @function
- * @param {*} element
- * @param {*} events
- * @param {*} handler
- * @param {*} useCapture
- * @param {*} args
- * @returns {Array}
+ * Allows you add multiple event listeners to an application
+ *
+ * e.g: addMultipleListeners(document.getElementById('first'),['touchstart','click'],() => {},false);
+ *
+ * @param {HTMLElement} element - element you want to add event
+ * @param {Array} events - events its self
+ * @param {Function} handler - a function to handle callback
+ * @param {Boolean} useCapture - decides use capture or not
+ * @param {Array} args - Other arguments
+ * @returns {void}
  */
 const addMultipleListeners = (element, events, handler, useCapture, args) => {
 	if (!(events instanceof Array)) {

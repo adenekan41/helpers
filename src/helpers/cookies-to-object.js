@@ -1,8 +1,10 @@
 /**
- * @function
- * @default
- * @param {*} cookie
- * @returns {Cookies to Object}
+ * Gives you the ability to return cookies to object
+ *
+ * (e.g): cookieToObject('token=wwefwef2d23e2;page=loss') // Returns {token: 'wwefwef2d23e2', page: 'loss'}
+ *
+ * @param {String} cookie - The string passed into the function
+ * @returns {Object} Returns cookies to object from the initial string
  */
 
 const cookieToObject = cookie => {
